@@ -1,0 +1,389 @@
+.plan{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width:auto;
+  height: auto;
+  z-index: -1;
+}
+
+h1{
+  color:rgb(255, 41, 162);
+  font-family: 'Press Start 2P', cursive;
+  z-index:1;
+}
+
+h2{
+  position:absolute;
+  color:rgb(255, 41, 162);
+  font-family: 'Press Start 2P', cursive;
+  z-index:1;
+  font-size:15px;
+  margin-top:-20px;
+}
+
+#indicator{
+  position:relative;
+  color:rgba(255, 41, 162, 0.100);
+  font-family: 'Press Start 2P', cursive;
+  z-index:1;
+  font-size: 36px;
+  margin-left: 90px;
+  margin-top: -145px;
+}
+
+#do{
+  position:relative;
+  color:rgba(255, 255, 255, 0);
+  font-family: 'Press Start 2P', cursive;
+  z-index:1;
+  font-size: 120px;
+  margin-left: 125px;
+  margin-top: 60px;
+}
+
+#re{
+  position:relative;
+  color:rgba(255, 255, 255, 0);
+  font-family: 'Press Start 2P', cursive;
+  z-index:1;
+  font-size: 120px;
+  margin-left: 90px;
+  margin-top: 60px;
+}
+
+#mi{
+  position:relative;
+  color:rgba(255, 255, 255, 0);
+  font-family: 'Press Start 2P', cursive;
+  z-index:1;
+  font-size: 120px;
+  margin-left: 125px;
+  margin-top: 50px;
+}
+
+#fa{
+  position:relative;
+  color:rgba(255, 255, 255, 0);
+  font-family: 'Press Start 2P', cursive;
+  z-index:1;
+  font-size: 120px;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.button {
+  position:absolute;
+  right: -1px;
+  border-radius: 27%;
+  background-color:transparent;
+  color:rgb(255, 41, 162);
+  border: 2px solid rgb(255, 41, 162);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 28px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 30px;
+}
+
+.button:hover {
+  background-color: rgb(255, 41, 162); 
+  color: white;
+}
+
+.buttonr {
+  position:absolute;
+  left: 70px;
+  border-radius: 27%;
+  background-color:transparent;
+  color:rgb(255, 41, 162);
+  border: 2px solid rgb(255, 41, 162);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 28px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 30px;
+}
+
+.buttonr:hover {
+  background-color: rgb(255, 41, 162); 
+  color: white;
+}
+
+
+#switches {
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  margin-left: 82px;
+  margin-top: 127px;
+}
+
+.text2 {
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  margin-left: 79px;
+  margin-top: 188px;
+  color: rgb(255, 41, 162);
+}
+
+.text3 {
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  margin-left: 72px;
+  margin-top: 126px;
+  color: rgb(255, 41, 162);
+}
+
+#title {
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  font-size: 37px;
+  margin-left: 25px;
+  margin-top: 26px;
+  color:rgb(255, 41, 162);
+}
+
+#click{
+  position: absolute;
+  background: transparent;
+  color: rgb(255, 41, 162);
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 20px;
+  height: 30px;
+  width: 50px;
+  margin-left: 90px;
+  margin-top: 148px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border-radius:20%;
+}
+
+#turn {
+  position: absolute;
+  background: transparent;
+  color: rgb(255, 41, 162);
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 20px;
+  height: 30px;
+  width: 50px;
+  margin-left: 90px;
+  margin-top: 207px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border-radius:20%;
+}
+
+#outer-circle {
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  border-style: solid;
+  border-width: 75px;
+  margin: auto;
+  margin-top: 15vh;
+}
+
+#topleft {
+  cursor: pointer;
+  position: absolute;
+  height: 260px;
+  width: 450px;
+  border-radius: 250px 0 0 0;
+  -moz-border-radius: 250px 0 0 0;
+  -webkit-border-radius: 250px 0 0 0;
+  background: darkgreen;
+  top: 43%;
+  left: 3%;
+  margin: -250px 0px 0px -250px;
+  border-style: solid;
+  border-width: 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#topright {
+  cursor: pointer;
+  position: absolute;
+  height: 260px;
+  width: 450px;
+  border-radius: 0 250px 0 0;
+  -moz-border-radius: 0 250px 0 0;
+  -webkit-border-radius: 0 250px 0 0;
+  background:darkred;
+  top: 43%;
+  left: 57%;
+  margin: -250px 0px 0px 0px;
+  border-style: solid;
+  border-width: 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#bottomleft {
+  cursor: pointer;
+  position: absolute;
+  height: 260px;
+  width: 450px;
+  border-radius: 0 0 0 250px;
+  -moz-border-radius: 0 0 0 250px;
+  -webkit-border-radius: 0 0 0 250px;
+  background: goldenrod;
+  top: 57%;
+  left: 3%;
+  margin: 0px -250px 0px -250px;
+  border-style: solid;
+  border-width: 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#bottomright {
+  cursor: pointer;
+  position: absolute;
+  height: 260px;
+  width: 450px;
+  border-radius: 0 0 250px 0;
+  -moz-border-radius: 0 0 250px 0;
+  -webkit-border-radius: 0 0 250px 0;
+  background: darkblue;
+  top: 57%;
+  left: 57%;
+  margin: 0px 0px -250px 0px;
+  border-style: solid;
+  border-width: 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#inner-circle {
+  position: absolute;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border-style: solid;
+  border-width: 10px;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0px 0px -125px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+/* MODAL */
+
+.buttonm{
+  position:absolute;
+  top:40px;
+  right:40px;
+  border-radius: 30%;
+  background-color: transparent; 
+  color:rgb(255, 41, 162); 
+  border: 2px solid rgb(255, 41, 162); 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size:30px;
+}
+
+.buttonm:hover {
+  background-color: rgb(255, 41, 162); 
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 3px solid rgb(255, 41, 162);
+  border-radius: 10px;
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
+  width: 500px;
+  max-width: 80%;
+  color:rgb(255, 41, 162);
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(255, 41, 162);
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color:rgb(255, 41, 162);
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+

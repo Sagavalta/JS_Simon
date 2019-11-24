@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>SUPER SIMON</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+
+  <audio id="clip1">
+  	<source src="sound/sound1.mp3"></source>
+  </audio>
+  <audio id="clip2">
+  	<source src="sound/sound2.mp3"></source>
+  </audio>
+  <audio id="clip3">
+  	<source src="sound/sound3.mp3"></source>
+  </audio>
+  <audio id="clip4">
+  	<source src="sound/sound4.mp3"></source>
+  </audio>
+  <script defer src="js/modal.js"></script>
+
+</head>
+
+<body>
+
+  <div class="plan">
+
+    <video autoplay loop muted>
+      <source src="video/video.mp4" type="video/mp4">
+    </video>
+
+  </div>
+
+  <h1>SUPER-SIMON!</h1>
+
+  <h2>By DUPEY Mathias</h2>
+
+  <button class="buttonm" data-modal-target="#modal">?</button>
+  
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">How to play the game ?</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        Press the &#9658 button. Simon will give the first signal. Repeat the signal by pressing the same color lens.<br><br>
+
+        Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color lenses, in order.<br><br>
+        
+        Simon will duplicate these first two signals and add one.<br><br>
+        
+        Continue playing as long as you can repeat each sequence of signals correctly. Simon automatically speeds up until the 8th round.<br><br>
+        
+        If you fail to repeat a sequence exactly, this means you've lost, and the sequence of signals ends.
+    </div>
+  </div>
+  
+  <div id="outer-circle">
+    <h3 id="indicator">your turn!</h3>
+    <div id="topleft">
+      <div id="do">DO</div>
+    </div>
+    <div id="topright">
+      <div id="re">RE</div>
+    </div>
+    <div id="bottomleft">
+      <div id="mi">MI</div>
+    </div>
+    <div id="bottomright">
+      <div id="fa">FA</div>
+    </div>
+    <div id="inner-circle">
+      <div id="title" class="font-effect-emboss">SUPER<br>SIMON</div>
+      <div id="switches">
+        <button class="button" id="start">&#9658</button>
+        <button class="buttonr" id="reset">↻</button>
+      </div>
+      <div class="text3">
+        CLICKS
+      </div>
+      <div id="click"></div>
+      <div class="text2">
+        ROUND
+      </div>
+      <div id="turn"></div>
+    </div>
+  </div>
+
+  <script  src="js/index.js"></script>
+
+</body>
+</html>
